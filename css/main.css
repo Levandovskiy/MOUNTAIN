@@ -131,6 +131,17 @@ h6 {
 .header__menu .menu__list .menu__link {
   color: #fcfcfc;
   margin-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.header__menu .menu__list .menu__link:hover {
+  transform: scale(1.1);
 }
 .header .menu__search {
   margin-left: 350px;
@@ -282,6 +293,17 @@ body {
 }
 .page__cart .page__cart-item {
   margin: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.page__cart .page__cart-item:hover {
+  transform: scale(1.1);
 }
 
 .tours {
@@ -471,6 +493,16 @@ body {
   background-color: #ec5118;
   text-align: center;
   margin-top: 40px;
+  display: inline-block;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.blog__news .batton .myButtonClass:hover, .blog__news .batton .myButtonClass:focus, .blog__news .batton .myButtonClass:active {
+  transform: scale(1.1);
 }
 
 .blog__instraction .blog__instraction__item p {
@@ -591,6 +623,16 @@ body {
   background-color: #ec5118;
   color: #fcfcfc;
   font-size: 20px;
+  display: inline-block;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.registration-form .wraper-form .form-group-all .submit-btn:hover, .registration-form .wraper-form .form-group-all .submit-btn:focus, .registration-form .wraper-form .form-group-all .submit-btn:active {
+  transform: scale(1.1);
 }
 
 .map_and_contacts_all {
