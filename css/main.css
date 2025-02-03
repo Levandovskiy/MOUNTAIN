@@ -104,6 +104,20 @@ h6 {
   left: 250px; /* Змінюємо значення left відповідно до вашого дизайну */
   z-index: 2; /* Забезпечуємо, що це значення більше, ніж у .header_img */
 }
+@media (max-width: 1700px) {
+  .header__container {
+    top: 50px;
+    left: 150px;
+    z-index: 2;
+  }
+}
+@media (max-width: 1550px) {
+  .header__container {
+    top: 50px;
+    left: 100px;
+    z-index: 2;
+  }
+}
 .header__logo {
   color: #fcfcfc;
   font-size: 30px;
