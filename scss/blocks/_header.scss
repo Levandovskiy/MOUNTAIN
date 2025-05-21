@@ -1,8 +1,8 @@
 .header {
   position: relative;
-
   .header_img {
     width: 100%;
+    z-index: 0;
   }
 
   &__container {
@@ -10,11 +10,9 @@
     align-items: center;
     justify-content: center;
 
-    position: absolute;
-
     top: 50px; /* Змінюємо значення top відповідно до вашого дизайну */
     left: 250px; /* Змінюємо значення left відповідно до вашого дизайну */
-    z-index: 2; /* Забезпечуємо, що це значення більше, ніж у .header_img */
+    z-index: 1; /* Забезпечуємо, що це значення більше, ніж у .header_img */
 
     @media (max-width: 1700px) {
       top: 50px;
@@ -25,6 +23,18 @@
     @media (max-width: 1550px) {
       top: 50px;
       left: 100px;
+      z-index: 2;
+      width: calc(100% - 40px);
+    }
+
+    @media (max-width: 1500px) {
+      width: 100%; /* займає всю ширину батьківського елемента */
+      max-width: 1500px; /* максимальна ширина, щоб не було дуже широким */
+      margin: 0 auto; /* центровання по горизонталі */
+      padding: 0 15px; /* відступи всередині */
+      box-sizing: border-box; /* враховує padding у ширину */
+      top: 50px;
+      left: 50px;
       z-index: 2;
     }
   }
