@@ -51,6 +51,9 @@
   }
 
   &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .menu__list {
       display: flex;
       justify-content: center;
@@ -84,8 +87,6 @@
     }
   }
   .menu__search {
-    margin-left: 350px;
-
     color: #fcfcfc;
     font-size: 16px;
     font-style: normal;
@@ -97,17 +98,16 @@
 
     .tell {
       color: #fcfcfc;
+      display: flex;
+      align-items: center;
     }
   }
 
   .header__icons {
     display: flex;
-    justify-content: center;
-
-    margin-left: 80px;
-
+    align-items: center;
+    justify-content: flex-end;
     .header__men {
-      margin-left: 40px;
     }
   }
 
