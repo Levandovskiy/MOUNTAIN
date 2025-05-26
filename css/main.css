@@ -190,11 +190,21 @@ h6 {
   color: #fcfcfc;
   display: flex;
   align-items: center;
+  margin-left: 100px;
 }
 .header .header__icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: 100px;
+}
+@media (max-width: 1250px) {
+  .header .header__icons {
+    margin-left: 50px;
+  }
+}
+.header .header__icons .header__men {
+  margin-left: 20px;
 }
 .header .header__text {
   display: flex;
@@ -216,6 +226,12 @@ h6 {
   line-height: normal;
   letter-spacing: 0;
   text-transform: none;
+}
+@media (max-width: 1200px) {
+  .header .header__text {
+    font-size: 100px;
+    font-weight: 400;
+  }
 }
 .header .everest-text {
   margin-top: 10px; /* Опціонально, для відстані між зображенням та текстом */
