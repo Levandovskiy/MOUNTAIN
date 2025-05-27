@@ -173,3 +173,59 @@
 .main {
   flex: 1; /* Розтягує вміст, щоб заповнити залишок екрану */
 }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+
+  span {
+    display: block;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  &.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  &.active span:nth-child(2) {
+    opacity: 0;
+  }
+  &.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+
+  @media (max-width: 1250px) {
+    display: flex;
+  }
+}
+
+.menu__list {
+  @media (max-width: 1250px) {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: #000; // або інший фон
+
+    width: 100%;
+    padding: 20px;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .menu__item {
+      margin: 10px 0;
+    }
+  }
+}
