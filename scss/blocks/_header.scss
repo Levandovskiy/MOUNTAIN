@@ -101,7 +101,15 @@
       color: #fcfcfc;
       display: flex;
       align-items: center;
-      margin-left: 100px;
+      margin-left: 300px;
+
+      @media (max-width: 1550px) {
+        margin-left: 200px;
+      }
+
+      @media (max-width: 1350px) {
+        margin-left: 100px;
+      }
     }
   }
 

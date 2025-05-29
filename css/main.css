@@ -190,7 +190,17 @@ h6 {
   color: #fcfcfc;
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 300px;
+}
+@media (max-width: 1550px) {
+  .header .menu__search .tell {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 1350px) {
+  .header .menu__search .tell {
+    margin-left: 100px;
+  }
 }
 .header .header__icons {
   display: flex;
