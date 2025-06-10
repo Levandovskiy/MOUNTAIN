@@ -97,39 +97,23 @@ h6 {
   z-index: 0;
 }
 .header__container {
-  display: flex; /* Зробити список гнучким контейнером */
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50px; /* Змінюємо значення top відповідно до вашого дизайну */
-  left: 250px; /* Змінюємо значення left відповідно до вашого дизайну */
-  z-index: 1; /* Забезпечуємо, що це значення більше, ніж у .header_img */
-}
-@media (max-width: 1700px) {
-  .header__container {
-    top: 50px;
-    left: 150px;
-    z-index: 2;
-  }
-}
-@media (max-width: 1550px) {
-  .header__container {
-    top: 50px;
-    left: 100px;
-    z-index: 2;
-    width: calc(100% - 40px);
-  }
+  width: 100%;
+  max-width: 1500px;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 @media (max-width: 1500px) {
   .header__container {
-    width: 100%; /* займає всю ширину батьківського елемента */
-    max-width: 1500px; /* максимальна ширина, щоб не було дуже широким */
-    margin: 0 auto; /* центровання по горизонталі */
-    padding: 0 15px; /* відступи всередині */
-    box-sizing: border-box; /* враховує padding у ширину */
-    top: 50px;
-    left: 50px;
-    z-index: 2;
+    width: 100%;
+    padding: 0 15px;
   }
 }
 .header__logo {
@@ -304,12 +288,21 @@ h6 {
   .menu__list {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: auto;
     flex-direction: column;
-    background: #000;
-    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* напівпрозорий білий */
+    backdrop-filter: blur(10px); /* розмиття заднього фону */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 600px;
     padding: 20px;
     display: none;
+    padding: 2rem;
+    width: 80%;
+    color: #fff;
+    text-align: center;
   }
   .menu__list.active {
     display: flex;
