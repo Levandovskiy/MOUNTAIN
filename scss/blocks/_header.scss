@@ -221,7 +221,7 @@
     display: none;
 
     padding: 2rem;
-    width: 80%;
+    max-width: 600px;
     color: #fff;
     text-align: center;
 
@@ -231,6 +231,8 @@
 
     .menu__item {
       margin: 10px 0;
+      text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey,
+        1px 1px 0 black;
     }
   }
 }
