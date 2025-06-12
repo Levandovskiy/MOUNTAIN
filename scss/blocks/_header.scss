@@ -42,6 +42,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .menu__burger {
+      margin-left: 20px;
+      display: none;
+
+      @media (max-width: 1250px) {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
     .menu__list {
       display: flex;
       justify-content: center;
@@ -70,6 +85,44 @@
         transition-property: transform;
         &:hover {
           transform: scale(1.1); // Збільшуємо елемент на 10% при наведенні
+        }
+      }
+    }
+
+    @media (max-width: 1250px) {
+      .menu__list {
+        display: none;
+      }
+
+      .menu__list--acti {
+        position: absolute;
+        top: 100%;
+        right: auto;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.1); /* напівпрозорий білий */
+        backdrop-filter: blur(10px); /* розмиття заднього фону */
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+        width: 600px;
+        padding: 20px;
+        display: none;
+
+        padding: 2rem;
+        max-width: 600px;
+        color: #fff;
+        text-align: center;
+
+        &.active {
+          display: flex;
+        }
+
+        .menu__item {
+          margin: 10px 0;
+          text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey,
+            1px 1px 0 black;
         }
       }
     }
@@ -169,41 +222,7 @@
   flex: 1; /* Розтягує вміст, щоб заповнити залишок екрану */
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-
-  span {
-    display: block;
-    height: 3px;
-    background: #fff;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-
-  &.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-  &.active span:nth-child(2) {
-    opacity: 0;
-  }
-  &.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
-  }
-
-  @media (max-width: 1250px) {
-    display: flex;
-  }
-}
-
-.menu__list {
+.menu__list--acti {
   @media (max-width: 1250px) {
     position: absolute;
     top: 100%;
