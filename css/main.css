@@ -177,8 +177,6 @@ h6 {
 @media (max-width: 1250px) {
   .header__menu .menu__list {
     display: none;
-  }
-  .header__menu .menu__list--acti {
     position: absolute;
     top: 100%;
     right: auto;
@@ -197,15 +195,16 @@ h6 {
     color: #fff;
     text-align: center;
   }
-  .header__menu .menu__list--acti.active {
+  .header__menu .menu__list.active {
     display: flex;
   }
-  .header__menu .menu__list--acti .menu__item {
+  .header__menu .menu__list .menu__item {
     margin: 10px 0;
     text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey, 1px 1px 0 black;
   }
 }
-.header .menu__search {
+
+.menu__search {
   color: #fcfcfc;
   font-size: 16px;
   font-style: normal;
@@ -215,37 +214,44 @@ h6 {
   letter-spacing: 0;
   text-transform: none;
 }
-.header .menu__search .tell {
+.menu__search .tell {
   color: #fcfcfc;
   display: flex;
   align-items: center;
   margin-left: 300px;
 }
 @media (max-width: 1550px) {
-  .header .menu__search .tell {
+  .menu__search .tell {
     margin-left: 200px;
   }
 }
 @media (max-width: 1350px) {
-  .header .menu__search .tell {
+  .menu__search .tell {
     margin-left: 100px;
   }
 }
-.header .header__icons {
+@media (max-width: 700px) {
+  .menu__search .tell {
+    margin-left: 10px;
+  }
+}
+
+.header__icons {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-left: 100px;
 }
 @media (max-width: 1250px) {
-  .header .header__icons {
+  .header__icons {
     margin-left: 50px;
   }
 }
-.header .header__icons .header__men {
+.header__icons .header__men {
   margin-left: 20px;
 }
-.header .header__text {
+
+.header__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,15 +273,17 @@ h6 {
   text-transform: none;
 }
 @media (max-width: 1200px) {
-  .header .header__text {
+  .header__text {
     font-size: 100px;
     font-weight: 400;
   }
 }
-.header .everest-text {
+
+.everest-text {
   margin-top: 10px; /* Опціонально, для відстані між зображенням та текстом */
 }
-.header .details-button {
+
+.details-button {
   display: block;
   text-align: center;
   color: white;
@@ -288,7 +296,8 @@ h6 {
   font-size: 40px; /* Зменшуємо розмір тексту */
   margin-top: 20px;
 }
-.header .details-button:hover {
+
+.details-button:hover {
   opacity: 1; /* При наведенні курсора, збільшуємо прозорість */
 }
 
