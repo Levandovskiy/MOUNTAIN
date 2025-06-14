@@ -43,6 +43,9 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 561px) {
+    }
+
     .menu__burger {
       margin-left: 20px;
       display: none;
@@ -114,6 +117,10 @@
 
         &.active {
           display: flex;
+
+          @media (max-width: 700px) {
+            max-width: 370px;
+          }
         }
 
         .menu__item {
@@ -151,6 +158,7 @@
 
     @media (max-width: 700px) {
       margin-left: 10px;
+      display: none;
     }
   }
 }
@@ -194,7 +202,12 @@
 
   @media (max-width: 1200px) {
     font-size: 100px;
-    font-weight: 400;
+    font-weight: 500;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 50px;
+    font-weight: 500;
   }
 }
 .everest-text {
@@ -213,6 +226,16 @@
   transition: opacity 0.3s ease; /* Плавний перехід для прозорості */
   font-size: 40px; /* Зменшуємо розмір тексту */
   margin-top: 20px;
+
+  @media (max-width: 1200px) {
+    font-size: 20px; /* Зменшуємо розмір тексту */
+    margin-top: 10px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 10px; /* Зменшуємо розмір тексту */
+    margin-top: 10px;
+  }
 }
 
 .details-button:hover {
@@ -221,38 +244,4 @@
 
 .main {
   flex: 1; /* Розтягує вміст, щоб заповнити залишок екрану */
-}
-
-.menu__list--acti {
-  @media (max-width: 1250px) {
-    position: absolute;
-    top: 100%;
-    right: auto;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.1); /* напівпрозорий білий */
-    backdrop-filter: blur(10px); /* розмиття заднього фону */
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-    width: 600px;
-    padding: 20px;
-    display: none;
-
-    padding: 2rem;
-    max-width: 600px;
-    color: #fff;
-    text-align: center;
-
-    &.active {
-      display: flex;
-    }
-
-    .menu__item {
-      margin: 10px 0;
-      text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey,
-        1px 1px 0 black;
-    }
-  }
 }

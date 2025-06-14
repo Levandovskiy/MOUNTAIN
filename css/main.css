@@ -198,6 +198,13 @@ h6 {
   .header__menu .menu__list.active {
     display: flex;
   }
+}
+@media (max-width: 1250px) and (max-width: 700px) {
+  .header__menu .menu__list.active {
+    max-width: 370px;
+  }
+}
+@media (max-width: 1250px) {
   .header__menu .menu__list .menu__item {
     margin: 10px 0;
     text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey, 1px 1px 0 black;
@@ -233,6 +240,7 @@ h6 {
 @media (max-width: 700px) {
   .menu__search .tell {
     margin-left: 10px;
+    display: none;
   }
 }
 
@@ -275,7 +283,13 @@ h6 {
 @media (max-width: 1200px) {
   .header__text {
     font-size: 100px;
-    font-weight: 400;
+    font-weight: 500;
+  }
+}
+@media (max-width: 800px) {
+  .header__text {
+    font-size: 50px;
+    font-weight: 500;
   }
 }
 
@@ -296,6 +310,18 @@ h6 {
   font-size: 40px; /* Зменшуємо розмір тексту */
   margin-top: 20px;
 }
+@media (max-width: 1200px) {
+  .details-button {
+    font-size: 20px; /* Зменшуємо розмір тексту */
+    margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .details-button {
+    font-size: 10px; /* Зменшуємо розмір тексту */
+    margin-top: 10px;
+  }
+}
 
 .details-button:hover {
   opacity: 1; /* При наведенні курсора, збільшуємо прозорість */
@@ -303,35 +329,6 @@ h6 {
 
 .main {
   flex: 1; /* Розтягує вміст, щоб заповнити залишок екрану */
-}
-
-@media (max-width: 1250px) {
-  .menu__list--acti {
-    position: absolute;
-    top: 100%;
-    right: auto;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.1); /* напівпрозорий білий */
-    backdrop-filter: blur(10px); /* розмиття заднього фону */
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    padding: 20px;
-    display: none;
-    padding: 2rem;
-    max-width: 600px;
-    color: #fff;
-    text-align: center;
-  }
-  .menu__list--acti.active {
-    display: flex;
-  }
-  .menu__list--acti .menu__item {
-    margin: 10px 0;
-    text-shadow: -1px -1px 0 grey, 1px -1px 0 black, -1px 1px 0 grey, 1px 1px 0 black;
-  }
 }
 
 .footer_item {
