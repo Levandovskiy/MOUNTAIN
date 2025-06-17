@@ -38,6 +38,14 @@ body {
   margin-top: 100px;
   display: flex;
   align-items: center;
+
+  .page__img {
+    @media (max-width: 1250px) {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
 }
 
 .page__popular-tours {
