@@ -413,6 +413,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .page__climbing-tours {
+    margin-top: 50px;
+  }
+}
 @media (max-width: 1250px) {
   .page__climbing-tours .page__img {
     max-width: 100%;
@@ -425,6 +430,11 @@ body {
   margin-top: 100px;
   display: flex;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .page__popular-tours {
+    margin-top: 50px;
+  }
 }
 .page__popular-tours .page__title {
   color: #061b28;
@@ -439,11 +449,23 @@ body {
   letter-spacing: 0;
   text-transform: none;
 }
+@media (max-width: 700px) {
+  .page__popular-tours .page__title {
+    font-size: 30px;
+  }
+}
 
 .page__cart {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 1650px) {
+  .page__cart {
+    flex-wrap: wrap;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 .page__cart .page__cart-item {
   margin: 20px;
@@ -458,6 +480,12 @@ body {
 }
 .page__cart .page__cart-item:hover {
   transform: scale(1.1);
+}
+@media (max-width: 500px) {
+  .page__cart .page__cart-item {
+    min-width: 50px;
+    max-width: 100%;
+  }
 }
 
 .tours {

@@ -39,6 +39,10 @@ body {
   display: flex;
   align-items: center;
 
+  @media (max-width: 700px) {
+    margin-top: 50px;
+  }
+
   .page__img {
     @media (max-width: 1250px) {
       max-width: 100%;
@@ -54,6 +58,10 @@ body {
   display: flex;
   align-items: center;
 
+  @media (max-width: 700px) {
+    margin-top: 50px;
+  }
+
   .page__title {
     color: #061b28;
     font-size: 52px;
@@ -66,6 +74,10 @@ body {
     margin-bottom: 30px;
     letter-spacing: 0;
     text-transform: none;
+
+    @media (max-width: 700px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -73,6 +85,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1650px) {
+    flex-wrap: wrap;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 
   .page__cart-item {
     margin: 20px;
@@ -87,6 +105,11 @@ body {
     transition-property: transform;
     &:hover {
       transform: scale(1.1); // Збільшуємо елемент на 10% при наведенні
+    }
+
+    @media (max-width: 500px) {
+      min-width: 50px; // не менше
+      max-width: 100%; // не більше ширини батька
     }
   }
 }
