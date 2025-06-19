@@ -465,6 +465,9 @@ body {
     flex-wrap: wrap;
     max-width: 100%;
     box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 .page__cart .page__cart-item {
@@ -483,8 +486,16 @@ body {
 }
 @media (max-width: 500px) {
   .page__cart .page__cart-item {
-    min-width: 50px;
     max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .page__cart .page__cart-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 

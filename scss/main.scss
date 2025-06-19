@@ -90,6 +90,10 @@ body {
     flex-wrap: wrap;
     max-width: 100%;
     box-sizing: border-box;
+
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .page__cart-item {
@@ -108,8 +112,17 @@ body {
     }
 
     @media (max-width: 500px) {
-      min-width: 50px; // не менше
-      max-width: 100%; // не більше ширини батька
+      max-width: 100%;
+      height: auto;
+      display: block; // щоб не було зайвих пробілів
+    }
+  }
+
+  .page__cart-img {
+    @media (max-width: 500px) {
+      max-width: 100%;
+      height: auto;
+      display: block; // щоб не було зайвих пробілів
     }
   }
 }
