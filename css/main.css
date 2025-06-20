@@ -565,6 +565,11 @@ body {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+@media (max-width: 1120px) {
+  .tours .tours_table {
+    display: block;
+  }
+}
 .tours .watch-button {
   display: inline-block;
   text-align: center;
