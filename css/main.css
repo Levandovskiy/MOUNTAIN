@@ -587,6 +587,87 @@ body {
 .tours .watch-button:hover {
   opacity: 1;
 }
+@media (max-width: 1120px) {
+  .tours .taurus_name {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .tours .taurus_text {
+    font-size: 16px;
+    line-height: 22px;
+    width: 80%;
+  }
+  .tours .tours_table {
+    font-size: 18px;
+    margin-top: 100px;
+  }
+  .tours .tours_table th,
+  .tours .tours_table td {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .tours .tours_table table {
+    width: 100%;
+  }
+  .tours .watch-button {
+    font-size: 20px;
+    margin-left: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .tours .taurus_name {
+    font-size: 28px;
+    line-height: 36px;
+    top: 18%;
+  }
+  .tours .taurus_text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 90%;
+    top: 28%;
+  }
+  .tours .tours_table {
+    top: 50%;
+    width: 95%;
+  }
+  .tours .tours_table th,
+  .tours .tours_table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .tours .tours_table table {
+    font-size: 14px;
+  }
+  .tours .watch-button {
+    font-size: 16px;
+    margin-left: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .tours .taurus_name {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .tours .taurus_text {
+    font-size: 13px;
+    line-height: 18px;
+    top: 27%;
+  }
+  .tours .tours_table {
+    top: 52%;
+    font-size: 12px;
+  }
+  .tours .tours_table th,
+  .tours .tours_table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .tours .watch-button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-left: 35%;
+  }
+}
 
 .blog__name {
   text-align: center;
@@ -606,9 +687,25 @@ body {
   padding-top: 100px;
   border-spacing: 10px;
 }
+@media (max-width: 1200px) {
+  .blog__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .blog__news {
   padding-right: 80px;
+}
+@media (max-width: 1200px) {
+  .blog__news {
+    padding-right: 0;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 .blog__news .blog__news__item {
   background-color: #061b28;
@@ -642,6 +739,13 @@ body {
   letter-spacing: 0;
   text-transform: none;
 }
+@media (max-width: 1200px) {
+  .blog__news .blog__news__item {
+    margin: 0 auto 30px auto;
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+}
 .blog__news .blog__news__item__white p {
   color: #626f77;
   font-size: 14px;
@@ -666,6 +770,13 @@ body {
   letter-spacing: 0;
   text-transform: none;
   max-width: 400px;
+}
+@media (max-width: 1200px) {
+  .blog__news .blog__news__item__white {
+    margin: 0 auto 30px auto;
+    padding: 20px 15px;
+    max-width: 100%;
+  }
 }
 .blog__news .batton .myButtonClass {
   color: #fcfcfc;
