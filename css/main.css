@@ -384,6 +384,13 @@ h6 {
   font-weight: 600;
   line-height: normal;
 }
+@media (max-width: 600px) {
+  .footer_item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+}
 
 html,
 body {
@@ -813,7 +820,31 @@ body {
 .blog__news .batton .myButtonClass:hover, .blog__news .batton .myButtonClass:focus, .blog__news .batton .myButtonClass:active {
   transform: scale(1.1);
 }
+@media (max-width: 1200px) {
+  .blog__news .batton .myButtonClass {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .blog__news .batton {
+    margin: 0 auto 30px auto;
+    padding: 20px 15px;
+    max-width: 100%;
+  }
+}
 
+@media (max-width: 1200px) {
+  .blog__instraction .blog__instraction__img-2 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .blog__instraction .blog__instraction__img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
 .blog__instraction .blog__instraction__item p {
   color: #626f77;
   font-size: 14px;
@@ -821,8 +852,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0;
-  text-transform: none;
   margin-top: 40px;
   margin-bottom: 10px;
 }
@@ -835,9 +864,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 31px;
-  margin-bottom: 0;
-  letter-spacing: 0;
-  text-transform: none;
 }
 .blog__instraction .blog__instraction__item h2 {
   max-width: 700px;
@@ -851,14 +877,25 @@ body {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 13px;
-  letter-spacing: 0;
-  text-transform: none;
 }
 
 .form {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+@media (max-width: 1300px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .form .form_img {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .registration-form {
@@ -877,27 +914,23 @@ body {
   color: #fcfcfc;
   font-size: 52px;
   font-style: normal;
-  margin-top: 0;
-  text-align: left;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   line-height: 60px;
-  margin-bottom: 0;
-  letter-spacing: 0;
-  text-transform: none;
+}
+@media (max-width: 600px) {
+  .registration-form .wraper-form h2 {
+    font-size: 32px;
+  }
 }
 .registration-form .wraper-form .youNeedHelp {
   color: #fcfcfc;
   font-size: 18px;
-  font-style: normal;
   margin-top: 20px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 27px;
-  margin-bottom: 0;
-  letter-spacing: 0;
-  text-transform: none;
 }
 .registration-form .wraper-form .form-group-all {
   background-color: #061b28;
@@ -950,6 +983,25 @@ body {
   text-align: center;
   margin-top: 140px;
 }
+.map_and_contacts_all .map-map {
+  margin: 0 auto;
+}
+@media (max-width: 700px) {
+  .map_and_contacts_all .map-map {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .map_and_contacts_all {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
 .map_and_contacts_all .contacts {
   margin-left: 70px;
 }
@@ -960,21 +1012,31 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   line-height: 60px;
-  letter-spacing: 0;
-  text-transform: none;
+}
+@media (max-width: 768px) {
+  .map_and_contacts_all .contacts h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .map_and_contacts_all .contacts h2 {
+    font-size: 20px;
+  }
 }
 .map_and_contacts_all .contacts li {
   color: #061b28;
   font-size: 22px;
-  font-style: normal;
   margin-top: 50px;
   text-align: left;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 31px;
-  margin-bottom: 0;
-  letter-spacing: 0;
-  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .map_and_contacts_all .contacts li {
+    font-size: 18px;
+    margin-top: 20px;
+  }
 }
 .map_and_contacts_all .contacts li a {
   color: #061b28;

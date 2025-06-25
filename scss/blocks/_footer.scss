@@ -29,4 +29,10 @@
     font-weight: 600;
     line-height: normal;
   }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
 }
