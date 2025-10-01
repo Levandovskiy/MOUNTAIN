@@ -348,6 +348,12 @@ h6 {
     margin-top: 10px;
   }
 }
+@media (max-width: 400px) {
+  .details-button {
+    font-size: 8px; /* Зменшуємо розмір тексту */
+    margin-top: 8px;
+  }
+}
 
 .details-button:hover {
   opacity: 1; /* При наведенні курсора, збільшуємо прозорість */
@@ -389,6 +395,13 @@ h6 {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+  }
+}
+@media (max-width: 300px) {
+  .footer_item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
   }
 }
 
