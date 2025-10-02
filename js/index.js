@@ -42,3 +42,28 @@ buttons.forEach((button) => {
     }
   });
 });
+
+// ...existing code...
+
+const slides = document.querySelectorAll(".slide");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+
+let currentIndex = 0;
+
+function updateSlider() {
+  const slidesContainer = document.querySelector(".slides");
+  slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlider();
+});
+
+// ...existing code...
