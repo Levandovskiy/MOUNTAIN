@@ -25,3 +25,21 @@ registrationForm.addEventListener("submit", (event) => {
 });
 
 // ...existing code...
+
+const buttons = document.querySelectorAll(".button-class"); // Замените .button-class на ваш класс кнопок
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const buttonId = event.target.id; // Получаем ID кнопки
+    console.log(`Кнопка с ID ${buttonId} была нажата`);
+
+    // Добавьте здесь логику для каждой кнопки
+    if (buttonId === "button1") {
+      alert("Кнопка 1 нажата!");
+    } else if (buttonId === "button2") {
+      alert("Кнопка 2 нажата!");
+    }
+  });
+});
+
+// ...existing code...
